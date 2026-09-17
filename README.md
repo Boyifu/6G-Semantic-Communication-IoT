@@ -12,7 +12,7 @@
 * `00_Instruction_Dataset_Generation.ipynb`：SFT 訓練資料集生成，負責將原始感測器數值轉換為 LLM 專用之 Alpaca JSON 指令格式。
 * `01_SFT_Model_Training.ipynb`：模型微調訓練程式碼，包含資料預處理與 LoRA 權重更新。
 * `02_E2E_Semantic_Communication_Pipeline.ipynb`：端到端通訊測試管線，涵蓋發射端特徵轉換、AWGN 通道雜訊模擬、接收端 GSW/LLM 雙軌解碼，以及最終的效能視覺化圖表生成。
-* `6G 雙軌語意通訊系統專題結果報告.pdf`：專題完整成果報告，包含系統架構設計與詳盡之消融實驗分析。
+* `6G_Semantic_Communication_Report.pdf`：專題完整成果報告，包含系統架構設計與詳盡之消融實驗分析。
 
 ## 模型權重 (Model Weights)
 本系統使用之核心語意解碼器已透過 LoRA 進行微調並量化匯出為 `.gguf` 格式，以利於邊緣設備推論。
