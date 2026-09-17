@@ -4,8 +4,8 @@
 
 ## 系統亮點 (Key Features)
 * **雙軌解碼架構 (Dual-Track Decoding)**：以 `Threshold = 0.70` 作為最佳門檻值，完美平衡邊緣算力消耗與解碼精準度。
-* **抗極端雜訊 (Extreme Noise Robustness)**：在 Eb/N0 = 3.0 dB 時，JSON 格式輸出成功率維持 100%，感測器命中率達 96.3%，有效抑制推論幻覺。
-* **跨通道泛化能力 (Zero-Shot Generalization)**：訓練集採用 BSC 通道，測試集採 AWGN 通道，證明模型無須重新訓練即可適應異質通道。
+* **抗極端雜訊 (Extreme Noise Robustness)**：在 Eb/N0 = 3.0 dB 時，相對誤差控制在0.09以下，JSON 格式輸出成功率維持 100%，感測器命中率達 96.3%，有效抑制推論幻覺。
+* **跨通道泛化能力 (Zero-Shot Generalization)**：訓練集採用 BSC 通道，測試集採 BPSK+AWGN 通道，證明模型無須重新訓練即可適應異質通道。
 
 ## 儲存庫內容 (Repository Contents)
 本專案依據實驗與系統資料流，將程式碼模組化為以下三個核心階段：
